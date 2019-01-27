@@ -123,7 +123,7 @@ class MakeTargetGUI(wx.App):
         # Set title bar icon
         if os.path.isfile("resources/makehuman.ico"):
             loc = wx.IconLocation(r'resources/makehuman.ico', 0)
-            self.frame.SetIcon(wx.IconFromLocation(loc))
+            self.frame.SetIcon(wx.Icon(loc))
             
         if DEBUG:
             self.frame.SetTitle("MakeTarget (v%s) (DEBUG mode)"% str(maketarget.VERSION))
